@@ -22,7 +22,7 @@ const JobsListings = () => {
                {job.description}
               </div>
   
-              <h3 className="text-indigo-500 mb-2">{job.salary}</h3>
+              <h3 className="text-indigo-500 mb-2">{job.salary} / year</h3>
   
               <div className="border border-gray-100 mb-5"></div>
   
@@ -32,7 +32,7 @@ const JobsListings = () => {
                   {job.location}
                 </div>
                 <a
-                  href="job.html"
+                  href={`/job/${id}`}
                   className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
                  Read More
